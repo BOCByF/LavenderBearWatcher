@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90D84077183B789C005323F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D84076183B789C005323F7 /* Foundation.framework */; };
+		90D84079183B789C005323F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D84078183B789C005323F7 /* CoreGraphics.framework */; };
+		90D8407B183B789C005323F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8407A183B789C005323F7 /* UIKit.framework */; };
+		90D84081183B789C005323F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90D8407F183B789C005323F7 /* InfoPlist.strings */; };
+		90D84083183B789C005323F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D84082183B789C005323F7 /* main.m */; };
+		90D84087183B789C005323F7 /* PVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D84086183B789C005323F7 /* PVAppDelegate.m */; };
+		90D8408A183B789C005323F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D84088183B789C005323F7 /* Main.storyboard */; };
+		90D8408D183B789C005323F7 /* PVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D8408C183B789C005323F7 /* PVViewController.m */; };
+		90D8408F183B789C005323F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D8408E183B789C005323F7 /* Images.xcassets */; };
+		90D84096183B789C005323F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D84095183B789C005323F7 /* XCTest.framework */; };
+		90D84097183B789C005323F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D84076183B789C005323F7 /* Foundation.framework */; };
+		90D84098183B789C005323F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D8407A183B789C005323F7 /* UIKit.framework */; };
+		90D840A0183B789C005323F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90D8409E183B789C005323F7 /* InfoPlist.strings */; };
+		90D840A2183B789C005323F7 /* LavenderBearWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D840A1183B789C005323F7 /* LavenderBearWatcherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90D84099183B789C005323F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D8406B183B789C005323F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D84072183B789C005323F7;
+			remoteInfo = LavenderBearWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90D84073183B789C005323F7 /* LavenderBearWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LavenderBearWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D84076183B789C005323F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90D84078183B789C005323F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90D8407A183B789C005323F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90D8407E183B789C005323F7 /* LavenderBearWatcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LavenderBearWatcher-Info.plist"; sourceTree = "<group>"; };
+		90D84080183B789C005323F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90D84082183B789C005323F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90D84084183B789C005323F7 /* LavenderBearWatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LavenderBearWatcher-Prefix.pch"; sourceTree = "<group>"; };
+		90D84085183B789C005323F7 /* PVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVAppDelegate.h; sourceTree = "<group>"; };
+		90D84086183B789C005323F7 /* PVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVAppDelegate.m; sourceTree = "<group>"; };
+		90D84089183B789C005323F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90D8408B183B789C005323F7 /* PVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVViewController.h; sourceTree = "<group>"; };
+		90D8408C183B789C005323F7 /* PVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVViewController.m; sourceTree = "<group>"; };
+		90D8408E183B789C005323F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		90D84094183B789C005323F7 /* LavenderBearWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LavenderBearWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D84095183B789C005323F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		90D8409D183B789C005323F7 /* LavenderBearWatcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LavenderBearWatcherTests-Info.plist"; sourceTree = "<group>"; };
+		90D8409F183B789C005323F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90D840A1183B789C005323F7 /* LavenderBearWatcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LavenderBearWatcherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D84070183B789C005323F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D84079183B789C005323F7 /* CoreGraphics.framework in Frameworks */,
+				90D8407B183B789C005323F7 /* UIKit.framework in Frameworks */,
+				90D84077183B789C005323F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D84091183B789C005323F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D84096183B789C005323F7 /* XCTest.framework in Frameworks */,
+				90D84098183B789C005323F7 /* UIKit.framework in Frameworks */,
+				90D84097183B789C005323F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D8406A183B789C005323F7 = {
+			isa = PBXGroup;
+			children = (
+				90D8407C183B789C005323F7 /* LavenderBearWatcher */,
+				90D8409B183B789C005323F7 /* LavenderBearWatcherTests */,
+				90D84075183B789C005323F7 /* Frameworks */,
+				90D84074183B789C005323F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90D84074183B789C005323F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D84073183B789C005323F7 /* LavenderBearWatcher.app */,
+				90D84094183B789C005323F7 /* LavenderBearWatcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D84075183B789C005323F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D84076183B789C005323F7 /* Foundation.framework */,
+				90D84078183B789C005323F7 /* CoreGraphics.framework */,
+				90D8407A183B789C005323F7 /* UIKit.framework */,
+				90D84095183B789C005323F7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90D8407C183B789C005323F7 /* LavenderBearWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				90D84085183B789C005323F7 /* PVAppDelegate.h */,
+				90D84086183B789C005323F7 /* PVAppDelegate.m */,
+				90D84088183B789C005323F7 /* Main.storyboard */,
+				90D8408B183B789C005323F7 /* PVViewController.h */,
+				90D8408C183B789C005323F7 /* PVViewController.m */,
+				90D8408E183B789C005323F7 /* Images.xcassets */,
+				90D8407D183B789C005323F7 /* Supporting Files */,
+			);
+			path = LavenderBearWatcher;
+			sourceTree = "<group>";
+		};
+		90D8407D183B789C005323F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D8407E183B789C005323F7 /* LavenderBearWatcher-Info.plist */,
+				90D8407F183B789C005323F7 /* InfoPlist.strings */,
+				90D84082183B789C005323F7 /* main.m */,
+				90D84084183B789C005323F7 /* LavenderBearWatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90D8409B183B789C005323F7 /* LavenderBearWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				90D840A1183B789C005323F7 /* LavenderBearWatcherTests.m */,
+				90D8409C183B789C005323F7 /* Supporting Files */,
+			);
+			path = LavenderBearWatcherTests;
+			sourceTree = "<group>";
+		};
+		90D8409C183B789C005323F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D8409D183B789C005323F7 /* LavenderBearWatcherTests-Info.plist */,
+				90D8409E183B789C005323F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D84072183B789C005323F7 /* LavenderBearWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D840A5183B789C005323F7 /* Build configuration list for PBXNativeTarget "LavenderBearWatcher" */;
+			buildPhases = (
+				90D8406F183B789C005323F7 /* Sources */,
+				90D84070183B789C005323F7 /* Frameworks */,
+				90D84071183B789C005323F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LavenderBearWatcher;
+			productName = LavenderBearWatcher;
+			productReference = 90D84073183B789C005323F7 /* LavenderBearWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D84093183B789C005323F7 /* LavenderBearWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D840A8183B789C005323F7 /* Build configuration list for PBXNativeTarget "LavenderBearWatcherTests" */;
+			buildPhases = (
+				90D84090183B789C005323F7 /* Sources */,
+				90D84091183B789C005323F7 /* Frameworks */,
+				90D84092183B789C005323F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D8409A183B789C005323F7 /* PBXTargetDependency */,
+			);
+			name = LavenderBearWatcherTests;
+			productName = LavenderBearWatcherTests;
+			productReference = 90D84094183B789C005323F7 /* LavenderBearWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D8406B183B789C005323F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PV;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = BoxOfCats;
+				TargetAttributes = {
+					90D84093183B789C005323F7 = {
+						TestTargetID = 90D84072183B789C005323F7;
+					};
+				};
+			};
+			buildConfigurationList = 90D8406E183B789C005323F7 /* Build configuration list for PBXProject "LavenderBearWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90D8406A183B789C005323F7;
+			productRefGroup = 90D84074183B789C005323F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D84072183B789C005323F7 /* LavenderBearWatcher */,
+				90D84093183B789C005323F7 /* LavenderBearWatcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D84071183B789C005323F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D8408F183B789C005323F7 /* Images.xcassets in Resources */,
+				90D84081183B789C005323F7 /* InfoPlist.strings in Resources */,
+				90D8408A183B789C005323F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D84092183B789C005323F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D840A0183B789C005323F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D8406F183B789C005323F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D8408D183B789C005323F7 /* PVViewController.m in Sources */,
+				90D84087183B789C005323F7 /* PVAppDelegate.m in Sources */,
+				90D84083183B789C005323F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D84090183B789C005323F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D840A2183B789C005323F7 /* LavenderBearWatcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90D8409A183B789C005323F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D84072183B789C005323F7 /* LavenderBearWatcher */;
+			targetProxy = 90D84099183B789C005323F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90D8407F183B789C005323F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D84080183B789C005323F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90D84088183B789C005323F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D84089183B789C005323F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90D8409E183B789C005323F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D8409F183B789C005323F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90D840A3183B789C005323F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90D840A4183B789C005323F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D840A6183B789C005323F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LavenderBearWatcher/LavenderBearWatcher-Prefix.pch";
+				INFOPLIST_FILE = "LavenderBearWatcher/LavenderBearWatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90D840A7183B789C005323F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LavenderBearWatcher/LavenderBearWatcher-Prefix.pch";
+				INFOPLIST_FILE = "LavenderBearWatcher/LavenderBearWatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		90D840A9183B789C005323F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LavenderBearWatcher.app/LavenderBearWatcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LavenderBearWatcher/LavenderBearWatcher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LavenderBearWatcherTests/LavenderBearWatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		90D840AA183B789C005323F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LavenderBearWatcher.app/LavenderBearWatcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LavenderBearWatcher/LavenderBearWatcher-Prefix.pch";
+				INFOPLIST_FILE = "LavenderBearWatcherTests/LavenderBearWatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D8406E183B789C005323F7 /* Build configuration list for PBXProject "LavenderBearWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D840A3183B789C005323F7 /* Debug */,
+				90D840A4183B789C005323F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D840A5183B789C005323F7 /* Build configuration list for PBXNativeTarget "LavenderBearWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D840A6183B789C005323F7 /* Debug */,
+				90D840A7183B789C005323F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		90D840A8183B789C005323F7 /* Build configuration list for PBXNativeTarget "LavenderBearWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D840A9183B789C005323F7 /* Debug */,
+				90D840AA183B789C005323F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D8406B183B789C005323F7 /* Project object */;
+}
