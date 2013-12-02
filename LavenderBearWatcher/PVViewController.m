@@ -18,7 +18,7 @@
 
 @implementation PVViewController
 @synthesize pageWebView, pageSearchResult, pageLoadFinishDateTextView, pageSourceTextView, refreshButton, loadFinishTime, notificationTime, blockList;
-@synthesize bearURLString;
+@synthesize bearURLString, isRemoteCalledToNotify;
 
 
 
@@ -27,9 +27,16 @@
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
-    [self setBearURLString:@"http://bridestowelavender.com.au/pub/index.php?c=19&products=3&details=126&backStr=Return%20to%20Site&backurl=c%3D19"] ;
+    [self setBearURLString:@"http://bridestowelavender.com.au/pub/index.php?c=19&products=3&details=126&backStr=Return%20to%20Site&backurl=c%3D19"];
+    
+    //testing - sold out
+    //[self setBearURLString:@"http://hanxt90.wordpress.com/2013/12/01/testingtext/"];
+    
+    //testing - sold out
+//    [self setBearURLString:@"http://hanxt90.wordpress.com/2013/12/01/testingtext-available/"];
     
     
+    self.isRemoteCalledToNotify = false;
     
 }
 
@@ -37,9 +44,9 @@
 -(void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
-    //    PVBearWebViewDelegate* webViewDelegate = [[PVBearWebViewDelegate alloc] init];
-    //    [pageWebView setDelegate: webViewDelegate];
     [self loadBearPage];
     
     [NSTimer scheduledTimerWithTimeInterval:(1 * 60 * 10) target:self selector:@selector(loadBearPage) userInfo:NULL repeats:true];
@@ -62,7 +69,7 @@
 
 - (IBAction)onRefreshButton:(id)sender
 {
-    [self notificationWithMessage:@"notification: refresh"];
+//    [self notificationWithMessage:@"notification: refresh"];
     [self loadBearPage];
 
 }
@@ -70,6 +77,8 @@
 
 - (void) loadBearPageWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler
 {
+//    [self notificationWithMessage:@"loadBearPageWithCompletionHandler called"];
+    self.isRemoteCalledToNotify = true;
     [self.blockList addObject:completionHandler];
     [self loadBearPage];
     
@@ -84,13 +93,10 @@
     }
     [pageWebView setDelegate: self];
     NSURL* bearURL = [NSURL URLWithString:self.bearURLString];
-    NSURLRequest* bearRequest = [NSURLRequest requestWithURL:bearURL cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
+    NSURLRequest* bearRequest = [NSURLRequest requestWithURL:bearURL cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:20];
     [pageWebView loadRequest:bearRequest];
     
-    //if (completionHandler != nil)
-    {
-        
-    }
+
 }
 
 //UIWebview delagate method
@@ -114,7 +120,7 @@
     {
         [pageSearchResult setText:@"bear Sold out"];
         //SH - testing
-        [self notifyUserIfNeeded:false];
+//        [self notifyUserIfNeeded:false];
     }
     else
     {
@@ -135,8 +141,6 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    
-    
     NSLog(@"bear didFailLoadWithError called");
 }
 
@@ -153,25 +157,18 @@
         notificationBody = @"Bridestowe Lavender Bear Sold out";
     }
     
-    if (self.notificationTime == nil)
+    NSInteger currentBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber];
+    if (self.isRemoteCalledToNotify && currentBadgeNumber < 1)
     {
-        self.notificationTime = [NSDate date];
-    }
-    NSTimeInterval fixedInterval = 1 * 60 * 59;
-    //NSTimeInterval fixedInterval = 1 * 30;
-    //NSTimeInterval currentInterval = [[NSDate date] timeIntervalSinceDate:self.notificationTime];
-    if ([[NSDate date] timeIntervalSinceDate:self.notificationTime] >= fixedInterval)
-    {
-        self.notificationTime = [NSDate date];
+        self.isRemoteCalledToNotify = false;
         UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-        localNotification.fireDate = [NSDate dateWithTimeInterval:1 sinceDate:self.notificationTime];
+        localNotification.fireDate = [NSDate dateWithTimeInterval:1 sinceDate:[NSDate date]];
         localNotification.timeZone = [NSTimeZone defaultTimeZone];
         localNotification.alertBody = notificationBody;
         localNotification.alertAction = @"View";
         localNotification.soundName = UILocalNotificationDefaultSoundName;
         localNotification.applicationIconBadgeNumber = 1;
         [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-    
         
     }
     

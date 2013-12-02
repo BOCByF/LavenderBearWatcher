@@ -24,6 +24,7 @@
 @property (nonatomic, retain) NSDate* notificationTime;
 
 @property (nonatomic, retain) NSMutableArray* blockList;
+@property (nonatomic) Boolean isRemoteCalledToNotify;
 
 - (void) notificationWithMessage:(NSString*)argMessage;
 
